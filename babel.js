@@ -401,6 +401,7 @@ const cards= [
     </div>`
     }
 ]
+
 //переменная для хранения количества ходов
 let totalClickCounter=0;
 
@@ -451,7 +452,6 @@ class Game{
         el.classList.remove('hide');
         if(!this.firstElement)  
         {
-            
             this.firstElement={
                 el,
                 id:elementId,
@@ -474,7 +474,6 @@ class Game{
                         _this.firstElement=null;
                     },100);   
             }
-        
         
         }
         if(this.checkGamerWin())
@@ -573,8 +572,6 @@ document.getElementById('start_menu').onclick =function(event)
         const myGame = new Game({name, count})
         myGame.start();
 
-
-    
 }
 
 
